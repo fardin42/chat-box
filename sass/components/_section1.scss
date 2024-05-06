@@ -1,0 +1,88 @@
+
+.btnBox{
+    width: 20%;
+    height: fit-content;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 2rem;
+    left: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    
+    
+    
+}
+.ct-bx{
+    border-radius: 1.5rem;
+    
+    position: fixed;
+    bottom: 15%;
+    left: 40%;
+    width: 24%;
+    height: 70%;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+    padding-bottom: 5rem;
+    
+div{ 
+  position: relative;
+    width: 100%;
+    .head{
+        position: sticky;
+        z-index: 1;
+        top: 0;
+        background-color: #fff;
+        display: flex;
+        width: 100%;
+        padding: 1rem 0;
+        flex-direction: row;
+        
+        justify-content: space-between;
+        border-radius: 20px;
+         button{
+            margin: 1rem;
+        }
+        
+        
+    }
+
+    form{
+        padding: 1.5rem  2.3rem 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        background-color: white;
+        border-radius: 0 0 1.2rem  1.2rem ;
+        position: fixed;
+        bottom: 110px;
+        left: 617px;
+    }
+}
+}
+.text-element {
+    width: 218px;
+    min-height: 17px !important;
+    border: 1px solid #ccc;
+    max-height: 56px;
+    padding: 6px 6px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    resize: none;
+    border-radius: 1rem;
+   border: none;
+   z-index: -1;
+
+  }
+  textarea:focus { 
+    outline: none !important;
+   
+}
+

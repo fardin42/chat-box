@@ -1,0 +1,12 @@
+.button-flat{
+    @include btn-crim;
+    @include btn-flat
+}
+.button-round{
+    @include btn-crim;
+    @include btn-round;
+}
+.button-small{
+    @include btn-crim;
+    @include btn-small;
+}
