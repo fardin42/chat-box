@@ -32,7 +32,7 @@ $("#chatBtn").on("click",function(){
 let send = document.getElementById("send")
 let net = window.navigator.onLine
 let indicator = document.getElementById("netIndi")
-
+let music = document.getElementById("music")
 send.addEventListener("click", function(){
  
     let newP = document.createElement("p")
@@ -44,15 +44,18 @@ send.addEventListener("click", function(){
     myDate = new Date()
    let  day = myDate.getHours()
     let  mins = myDate.getMinutes()
-    
    
+    music.innerHTML = ` <audio autoplay src="src/multi-pop-2-188167.mp3"></audio>`
+    
     if (net === true) {
-      
+
       newP.innerHTML = `<span>${ logMe.value} <div> <h6 id="myDate"> ${day }:${mins} </h6> <i class="fa-solid fa-check"></i> </div></span>`;
       
        if (logMe.value === "hi") {
         function timeDelay() {
+          
           newP2.innerHTML = `<span >Hello<div> <h6 id="myDate"> ${day }:${mins} </h6> <i class="fa-solid fa-check"></i> </div></span>`;
+          music.setAttribute("autoplay","")
         }
        
         
