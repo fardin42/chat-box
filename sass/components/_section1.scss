@@ -87,10 +87,11 @@ form {
     border-radius: 0 0 1.2rem 1.2rem;
    position: fixed;
    left: 40%;
-   bottom: 20%;
+   bottom: 21%;
    
 }
 textarea:focus { 
-    outline: none !important;
+    outline: none ;
+    
    
 }
