@@ -7,10 +7,12 @@ $("#chatBtn").on("click",function(){
       $("#chatBtn").toggleClass("button-flat")
       $("#ct-icon").toggleClass("fa-x")
     $("#ct-icon").toggleClass("fa-message")
+  
+    $("#box").toggleClass("d-none");
     $("#box").toggleClass("d-block");
         a = false
     }else{
-        $("#box").toggleClass("d-none");
+      $("#box").toggleClass("d-block");
     }
   });
 
@@ -45,7 +47,7 @@ send.addEventListener("click", function(){
    let  day = myDate.getHours()
     let  mins = myDate.getMinutes()
    
-    music.innerHTML = ` <audio autoplay src="src/multi-pop-2-188167.mp3"></audio>`
+    music.innerHTML = `<audio autoplay src="src/multi-pop-2-188167.mp3"></audio>`
     
     if (net === true) {
 
@@ -71,7 +73,7 @@ send.addEventListener("click", function(){
         
       }else{
         function timeDelay() {
-          newP2.innerHTML = `<span class="anim-typewriter">What?<div> <h6 id="myDate"> ${day }:${mins} </h6> <i class="fa-solid fa-check"></i> </div></span>`;
+          newP2.innerHTML = `<span class="anim-typewriter">How can i help you?<div> <h6 id="myDate"> ${day }:${mins} </h6> <i class="fa-solid fa-check"></i> </div></span>`;
         }
         
       }
